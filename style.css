@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
 }
 
-header {
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
@@ -18,14 +18,14 @@ header {
     padding-left: 20px;
 }
 
-.brand {
+.navbar__brand {
     color: white;
     filter: brightness(0) invert(1);
     width: 15%;
     align-self: center;
 }
 
-.nav_center {
+.navbar__navcenter {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -33,7 +33,7 @@ header {
     align-items: center;
 }
 
-header .btn {
+.navbar__btn {
     flex-grow: 1;
     width: 15%;
     align-self: center;
