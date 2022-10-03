@@ -3,10 +3,14 @@ body {
     width: 100vw;
 }
 
-.navbar {
+* {
+    box-sizing: border-box;
+}
+
+header {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    justify-content: stretch;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -17,22 +21,28 @@ body {
 .brand {
     color: white;
     filter: brightness(0) invert(1);
-    width: 10%;
+    width: 15%;
+    align-self: center;
 }
 
-.nav-center {
+.nav_center {
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
+    justify-content: flex-start;
+    width: 70%;
+    align-items: center;
 }
 
-.navbar button {
+header .btn {
     flex-grow: 1;
+    width: 15%;
+    align-self: center;
 }
 
-.nav-center h4 {
+h4 {
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
 button {
@@ -45,7 +55,6 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 12px;
-
 }
 
 main {
@@ -53,6 +62,7 @@ main {
     background-repeat: no-repeat;
     height: 100vh;
     background-position: right;
+    background-size:auto;
     text-align: left;
     font-size: 30px;
     font-weight: 700;
@@ -61,7 +71,7 @@ main {
     justify-items: center;
 }
 
-.dis {
+.discription {
     display: flex;
     flex-direction: column;
     width: 30%;
