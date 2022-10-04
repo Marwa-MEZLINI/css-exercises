@@ -1,0 +1,63 @@
+.nav {
+    display: inline-block;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu .services li {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    display: inline-block;
+    border: none;
+    width: max-content;
+    height: max-content;
+    top: 50%;
+    left: 50%;
+    margin-right: 25px;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid blue;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.services {
+    background-color: ;
+    color: lightslategrey;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    max-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.sous-menu a {
+    color: white;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    display: block;
+    
+}
+
+.services:hover .sous-menu {
+    display: block;
+}
